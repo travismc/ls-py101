@@ -7,3 +7,8 @@
 
 for num in range(1, 100, 2):
     print(num)
+
+# Further Exploration
+# Consider adding a way for the user to
+# specify the starting and ending values
+# of the odd numbers printed.
