@@ -12,3 +12,7 @@ width_meters = float(input("Enter width of room in meters: "))
 print(
     f"The room's area in square meters is {length_meters * width_meters:.2f}, which is equal to {(length_meters * width_meters) * 10.7639:.2f} square feet."
 )
+
+
+# Further Exploration
+# Modify the program to let the user specify the measurement type (meters or feet). Compute the area accordingly and print it and its conversion in parentheses.
