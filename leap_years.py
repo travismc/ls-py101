@@ -4,8 +4,10 @@
 
 
 def is_leap_year(year):
-    if year < 0:
+    if year <= 0:
         return "Year must be greater than zero."
+    if year < 1752 and year % 4 == 0:
+        return True
     elif year % 400 == 0:
         return True
     elif year % 100 == 0:
@@ -19,10 +21,10 @@ print(is_leap_year(1) == False)
 print(is_leap_year(2) == False)
 print(is_leap_year(3) == False)
 print(is_leap_year(4) == True)
-print(is_leap_year(1000) == False)
-print(is_leap_year(1100) == False)
+print(is_leap_year(1000) == True)
+print(is_leap_year(1100) == True)
 print(is_leap_year(1200) == True)
-print(is_leap_year(1300) == False)
+print(is_leap_year(1300) == True)
 print(is_leap_year(1751) == False)
 print(is_leap_year(1752) == True)
 print(is_leap_year(1753) == False)
@@ -32,3 +34,12 @@ print(is_leap_year(2000) == True)
 print(is_leap_year(2023) == False)
 print(is_leap_year(2024) == True)
 print(is_leap_year(2025) == False)
+
+
+# Further Exploration
+# Different regions adopted the Gregorian calendar at
+# different times. Investigate when it was adopted in
+# various countries and how that transition was
+# managed. Consider how this would impact the leap
+# year calculation and potentially adjust the solution
+# based on the country of reference.
