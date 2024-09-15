@@ -32,3 +32,14 @@ print(crunch('ggggggggggggggg'))
 print(crunch('abc'))
 print(crunch('a'))
 print(crunch(''))
+
+
+# Further Exploration
+# Regular expressions are also available in 
+# Python through the re module. If you're 
+# familiar with regular expressions, you can 
+# try to solve this problem using that module. 
+# Additionally, can you think of any other 
+# solutions that don't involve regular 
+# expressions, perhaps using Python's built-in 
+# string or list methods?
